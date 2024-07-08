@@ -1,0 +1,44 @@
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+
+{
+    "content": "lollaparusia!",
+    "important": true, 
+    "userId": "659eee482268838fb08c7a4d"
+}
+###
+
+DELETE http://localhost:3001/api/notes/6594901767e604200be8baca
+
+
+###
+
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+    "username": "pedrop",
+    "name": "Pedro Pascal",
+    "password": "pedroso"   
+}
+
+
+###
+POST http://localhost:3001/api/login
+Content-Type: application/json
+
+{
+    "username": "pedrop",
+    "password": "pedroso"   
+}
+
+
+###
+POST http://localhost:3001/api/notes 
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1sdXVra2FpIiwiaWQiOiI2NTllZWU0ODIyNjg4MzhmYjA4YzdhNGQiLCJpYXQiOjE3MDQ5MjgzMDh9.TIaMacjLzZrL9YccSN7xegbI4MRup3MosPwagvs0JwM
+
+{
+    "content": "Single page apps use token auth my friend",
+    "important": true
+}
