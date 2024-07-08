@@ -1,0 +1,127 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+    "title": "My first blog", 
+    "author": "John Doe",
+    "url": "http://www.johndoe.com",
+    "likes": 5
+}
+
+
+###
+DELETE http://localhost:3003/api/blogs/65a5ebc49294ab8ffb2b7870
+
+###
+PUT http://localhost:3003/api/blogs/65a210244a63537c1945e821
+Content-Type: application/json
+
+{
+    "likes": 4
+}
+
+###
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+    "username": "johndoe",
+    "name": "John Doe",
+    "password": "password_johndoe"
+}
+
+###
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+    "username": "janedoe",
+    "name": "Jane Doe",
+    "password": "password_janedoe"
+}
+
+###
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+    "username": "jan",
+    "name": "Ja Doe",
+    "password": "pa"
+}
+
+###
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+    "title": "My first blog", 
+    "author": "John Doe",
+    "url": "http://www.johndoe.com",
+    "userId": "6689e9637844beea47ebb68d"
+}
+
+###
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+    "title": "My second blog", 
+    "author": "John Doe",
+    "url": "http://www.johndoe.com",
+    "userId": "6689e9637844beea47ebb68d"
+}
+
+###
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+    "title": "My third blog", 
+    "author": "John Doe",
+    "url": "http://www.johndoe.com",
+    "userId": "6689e9637844beea47ebb68d"
+}
+
+###
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+    "username": "johndoe",
+    "password": "password_johndoe"
+}
+
+###
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG5kb2UiLCJpZCI6IjY2ODllOTYzNzg0NGJlZWE0N2ViYjY4ZCIsImlhdCI6MTcyMDM5NzQ0NH0.iQpz4Fz0viqPQ077l7JQXaI0X5H53oeEEOqECMGwI6g
+
+{
+    "title": "My first blog", 
+    "author": "John Doe",
+    "url": "http://www.johndoe.com"
+}
+
+###
+DELETE http://localhost:3003/api/blogs/668b49d6b77dfadbb1de4ca8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG5kb2UiLCJpZCI6IjY2ODllOTYzNzg0NGJlZWE0N2ViYjY4ZCIsImlhdCI6MTcyMDM5NzQ0NH0.iQpz4Fz0viqPQ077l7JQXaI0X5H53oeEEOqECMGwI6g
+
+###
+PUT http://localhost:3003/api/blogs/668b4be654cc613daf04a49f
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG5kb2UiLCJpZCI6IjY2ODllOTYzNzg0NGJlZWE0N2ViYjY4ZCIsImlhdCI6MTcyMDM5NzQ0NH0.iQpz4Fz0viqPQ077l7JQXaI0X5H53oeEEOqECMGwI6g
+
+{
+    "likes": 4
+}
+
+###
+PUT http://localhost:3003/api/blogs/668b4be654cc613daf04a49f
+Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG5kb2UiLCJpZCI6IjY2ODllOTYzNzg0NGJlZWE0N2ViYjY4ZCIsImlhdCI6MTcyMDM5NzQ0NH0.iQpz4Fz0viqPQ077l7JQXaI0X5H53oeEEOqECMGwI6g
+
+{
+    "likes": 4
+}
+

@@ -1,0 +1,31 @@
+
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+"name": "Athur MacArthur",
+"number": "321-123433"
+}
+
+
+###
+POST https://ofs-phonebook-2-be.fly.dev/api/persons
+Content-Type: application/json
+
+{
+"name": "Athur MacArthur",
+"number": "321-123433"
+}
+
+###
+DELETE http://localhost:3001/api/persons/66721ca4eb472e5adf4709e6
+
+###
+PUT http://localhost:3001/api/persons/668780056f20ad3429abe3be
+Content-Type: application/json
+
+{
+"name": "aa",
+"number": "321-123422"
+}
+

@@ -1,0 +1,44 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "content": "HTML is easy",
+      "important": true
+    },
+    {
+      "id": 2,
+      "content": "Browser can execute only JavaScript",
+      "important": false
+    },
+    {
+      "id": 3,
+      "content": "GET and POST are the most important methods of HTTP protocol",
+      "important": true
+    },
+    {
+      "content": "Hasta atras Nicolas",
+      "important": true,
+      "id": 4
+    },
+    {
+      "content": "Pa que me invitan si saben como me pongo",
+      "important": true,
+      "id": 5
+    },
+    {
+      "content": "La ultima y me voy",
+      "important": false,
+      "id": 6
+    },
+    {
+      "content": "Como si me importara la wea",
+      "important": true,
+      "id": 8
+    },
+    {
+      "content": "Mira conchetumare....",
+      "important": true,
+      "id": 9
+    }
+  ]
+}
